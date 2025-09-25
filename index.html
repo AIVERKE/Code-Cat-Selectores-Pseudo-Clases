@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto CSS – Selectores</title>
+  <style>
+    /* Selector universal */
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    /* Selectores básicos */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Pseudo-elementos decorativos */
+    h1::before {
+      content: "🌟 ";
+      color: gold;
+    }
+    h1::after {
+      content: " 🌟";
+      color: gold;
+    }
+
+    /* Estilos de lista */
+    ul {
+      list-style: none;
+      max-width: 400px;
+      margin: auto;
+      padding: 0;
+      border: 2px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    li {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      transition: background 0.3s ease;
+    }
+
+    /* Pseudo-clases */
+    li:hover {
+      background: #d1ecf1;
+    }
+
+    li:first-child {
+      font-weight: bold;
+      color: green;
+    }
+
+    li:last-child {
+      font-style: italic;
+      color: red;
+    }
+
+    li:nth-child(odd) {
+      background: #f0f0f0;
+    }
+
+    li:nth-child(even) {
+      background: #ffffff;
+    }
+
+    /* Input con focus */
+    input {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      width: 80%;
+    }
+
+    input:focus {
+      border-color: #007BFF;
+      outline: none;
+      background: #eef7ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista Interactiva</h1>
+
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+
+  <input type="text" placeholder="Escribe algo aquí...">
+</body>
+</html>
